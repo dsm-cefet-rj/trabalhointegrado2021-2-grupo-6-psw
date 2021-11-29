@@ -4,23 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>SimulaFacil</title>
 </head>
 <body>
-    <div>  
-        <img src="../assets/Logo1.png" alt="Logo escrito SimulaFacil">  
+    <div class="display_color">  
+        <img src="../assets/Logo1.png" alt="Logo escrito SimulaFacil" class="title_img">  
     </div>
     <div>
         <h1>Perfil do Usuário</h1>
     </div>
-    <div>
-        <h2>João da Silva</h2>
+    <div>     
         <img src="../assets/Joao_da_Silva.png">
+        <h2>João da Silva</h2>
     </div>
     <div>
-        <h3>Progresso: </h3>
-        <progress value = "123" max = "250">
+        <h3 class="progress_geral">Progresso Geral: </h3>
+        <p class="level">/Nível 1/:</p>
+        <progress class='progress' value = "123" max = "250">           
     </div>
-    
+    <div>
+        <h3>Bio: </h3>
+        <p id="bio_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex dolorum autem ratione similique impedit laborum non? Aliquam nemo accusantium quis ipsam architecto voluptas porro. Ullam veniam voluptates ipsum totam.</p>
+    </div>
+    <div>
+        <h3>Matérias preferidas: </h3>
+        <ul id="mat_list">
+            <li>Matemática</li>
+            <li>Português</li>
+            <li>Inglês</li>
+            <li>História</li>
+        </ul>
+    </div>
 </body>
 </html>
