@@ -21,13 +21,13 @@ body {
 }
 
 .progress[value]{
-    background-color: skyblue;
+    background-color: rgb(255, 153, 0);
     width: 100px;
     height: 10px;
     border-radius: 50%;
 }
 .progress[value]::-webkit-progress-value{
-    background-color: skyblue;
+    background-color: rgb(255, 153, 0);
     border-radius: 5px;
 }
 
@@ -39,7 +39,7 @@ body {
     margin-bottom: 0;
     font-style: italic;
     text-decoration: underline;
-    color: skyblue;
+    color: rgb(255, 153, 0);
 }
 
 .content {
@@ -67,11 +67,11 @@ body {
     font-family: Arial;
     font-size: 24px;
     padding: 25px;
-    background-color: #EFA736;
+    background-color: rgb(255, 153, 0);
     text-align: center;
  }
  .margem{
-     margin-bottom: 25px;
+    margin-bottom: 25px;
  }
  .margem2{
     margin-bottom: 75px;
