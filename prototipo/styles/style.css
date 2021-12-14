@@ -7,7 +7,7 @@ body {
 
 .display_color {
     background-color: rgb(255, 153, 0);
-    margin: -30px;
+    margin: -25px;
     margin-bottom: 25px;
 }
 
@@ -77,7 +77,7 @@ body {
     background-color: #EFA736;
     text-align: center;
  }
- .margem {
+ .margem1 {
      margin-bottom: 25px;
  }
  .margem2 {
@@ -105,4 +105,17 @@ body {
 
 .questao{
     width: 75%;
+}
+
+.reset_margin {
+    margin: -25px;
+}
+
+.reset_padding {
+    padding-left: 20px;
+}
+
+li {
+    margin-top: 18px;
+    margin-bottom: 3px;
 }
