@@ -1,0 +1,121 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    padding: 25px;
+}
+
+.display_color {
+    background-color: rgb(255, 153, 0);
+    margin: -25px;
+    margin-bottom: 25px;
+}
+
+.title_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.progress_geral {
+    margin-bottom: 25px;
+}
+
+.progress[value] {
+    margin-top: 10px;
+    border: solid 2px rgb(26, 4, 105);
+    background-color: rgb(255, 153, 0);
+    width: 250px;
+    height: 20px;
+    border-radius: 0%;
+}
+.progress[value]::-webkit-progress-value {
+    background-color: rgb(255, 153, 0);
+    border-radius: 3px;
+}
+
+.progress[value]::-webkit-progress-bar {
+    border-radius: 5px;
+}
+
+.level {
+    margin-bottom: 0;
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(255, 153, 0);
+}
+
+.content {
+    max-width: 750px;
+    padding: 12 20px;
+    text-align: justify;
+}
+
+#bio_content {
+    max-width: 500px;
+    padding: 15px;
+    border: 3px solid #000;
+    border-radius: 15px;
+    text-align: justify;
+}
+
+#mat_list {
+    text-decoration: underline;
+    list-style-type: disc;
+}
+.butao {
+    margin-right: 25px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 24px;
+    padding: 25px;
+    background-color: rgb(255, 153, 0);
+    text-align: center;
+ }
+ .margem {
+    margin-bottom: 25px;
+    background-color: #EFA736;
+    text-align: center;
+ }
+ .margem1 {
+     margin-bottom: 25px;
+ }
+ .margem2 {
+    margin-bottom: 200px;
+}
+
+.margem3 {
+    margin-top: 50px;
+}
+
+.navbar {
+    background-color: rgb(255, 153, 0);
+}
+
+.NumAcertos {
+    font-size: 24px;
+    color:  rgb(1, 221, 1);
+}
+
+.exp{
+    font-size:20px;
+    color: rgb(255, 153, 0);
+    font-style: italic;
+}
+
+.questao{
+    width: 75%;
+}
+
+.reset_margin {
+    margin: -25px;
+}
+
+.reset_padding {
+    padding-left: 20px;
+}
+
+li {
+    margin-top: 18px;
+    margin-bottom: 3px;
+}
