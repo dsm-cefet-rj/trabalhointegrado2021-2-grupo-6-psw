@@ -1,0 +1,12 @@
+{
+  "name": "trabalhointegrado2021-2-grupo-6-psw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dsm-cefet-rj/trabalhointegrado2021-2-grupo-6-psw.git",
+  "author": "ArthurCoutto <arthur.coutto@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
