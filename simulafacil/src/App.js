@@ -7,7 +7,7 @@ const App = () => {
     return(
         <>
         <h1>Hellow</h1><ul>
-            <Sidebar></Sidebar>
+
         </ul>
         </>
     )
