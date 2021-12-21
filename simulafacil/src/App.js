@@ -1,14 +1,20 @@
 import React from "react";
 import "./App.css";
-import "./Componentes/Sidebar/Sidebar"
-import Sidebar from "./Componentes/Sidebar/Sidebar";
+import { VisualizarEvento } from "./Componentes/Evento/VisualizarEventos";
+import { CriarExame } from "./Componentes/Exame/CriarExame";
+import { Header } from "./Componentes/Header/Header";
+import CriarQuestao from "./Componentes/Questao/CriarQuestao";
+import "./Componentes/Sidebar/Sidebar";
+import "./index.css"
+
 
 const App = () => {
     return(
         <>
-        <h1>Hellow</h1><ul>
-
-        </ul>
+        <Header/>
+        <VisualizarEvento />
+        <CriarExame/>
+        <CriarQuestao/>
         </>
     )
 }
