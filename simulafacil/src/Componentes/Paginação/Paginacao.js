@@ -1,6 +1,5 @@
 import React from 'react'
 import Pagination from 'react-bootstrap/Pagination'
-import PageItem from 'react-bootstrap/PageItem'
 import { useState } from 'react';
 
 /*let pagAtiva = 1;
@@ -44,15 +43,15 @@ function Paginacao (props) {
     }, []);
 
     return(
-        <div>
+        <div className="center">
         <Pagination>
-        <Pagination.Prev />
+        <Pagination.Prev/>
         <Pagination.Ellipsis />
         <Pagination.Item>{1}</Pagination.Item>
         <Pagination.Item>{2}</Pagination.Item>
         <Pagination.Item>{3}</Pagination.Item>
         <Pagination.Ellipsis />
-        <Pagination.Next />
+        <Pagination.Next/>
         </Pagination>
         </div>
     );

@@ -16,7 +16,7 @@ const App = () => {
         <>
         <Header/>
         <VisualizarEvento />
-        <Cartao 
+        <Cartao
         img="https://www.stoodi.com.br/wp-content/uploads/2018/08/Enem.jpg"
         titulo="Simulado"
         texto="Faça uma prova objetiva."

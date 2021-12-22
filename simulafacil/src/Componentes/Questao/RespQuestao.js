@@ -7,6 +7,9 @@ const RespQuestao = () =>{
 
     const [questaoAtual, setQuestaoAtual] = useState(0);
     const [pontos, setPontos] = useState(0);
+    const proxQuestao = questaoAtual +1;
+    const antQuestao = questaoAtual -1;
+
 
     const respQuestaoClick = (respCorreta) => {
         if (respCorreta) {
@@ -15,11 +18,11 @@ const RespQuestao = () =>{
     }
 
 return(<>
-    <div>
+    <div className="questbox">
         <p> {questao[questaoAtual].questTexto}</p>
         <p> {questao[questaoAtual].questPerg}</p>
     </div>
-    <div>
+    <div className="questbox">
         {questao[questaoAtual].questResp.map((opResp) => (
             <p onClick={() => respQuestaoClick(opResp.respCorreta)}>{opResp.respTexto}</p>
         ))}
