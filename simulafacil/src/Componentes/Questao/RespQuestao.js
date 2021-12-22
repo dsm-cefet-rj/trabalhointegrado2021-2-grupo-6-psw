@@ -3,16 +3,16 @@ import questao from "./Questoes";
 import Button from 'react-bootstrap/Button';
 import { useState } from "react";
 
-const [questaoAtual, setQuestaoAtual] = useState(0);
-const [pontos, setPontos] = useState(0);
-
-const respQuestaoClick = (respCorreta) => {
-    if (respCorreta) {
-        setPontos(pontos + 1);
-    }
-}
-
 const RespQuestao = () =>{
+
+    const [questaoAtual, setQuestaoAtual] = useState(0);
+    const [pontos, setPontos] = useState(0);
+
+    const respQuestaoClick = (respCorreta) => {
+        if (respCorreta) {
+            setPontos(pontos + 1);
+        }
+    }
 
 return(<>
     <div>

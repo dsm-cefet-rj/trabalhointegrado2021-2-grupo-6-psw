@@ -3,9 +3,12 @@ import "./App.css";
 import { VisualizarEvento } from "./Componentes/Evento/VisualizarEventos";
 import { CriarExame } from "./Componentes/Exame/CriarExame";
 import { Header } from "./Componentes/Header/Header";
-import CriarQuestao from "./Componentes/Questao/CriarQuestao";
+import RespQuestao from "./Componentes/Questao/RespQuestao";
+import Paginacao from "./Componentes/Paginação/Paginacao";
+import Cartao from "./Componentes/Cartao/Cartao";
 import "./Componentes/Sidebar/Sidebar";
 import "./index.css"
+
 
 
 const App = () => {
@@ -13,8 +16,14 @@ const App = () => {
         <>
         <Header/>
         <VisualizarEvento />
+        <Cartao 
+        img="https://www.stoodi.com.br/wp-content/uploads/2018/08/Enem.jpg"
+        titulo="Simulado"
+        texto="Faça uma prova objetiva."
+        botao="Acessar"/>
         <CriarExame/>
-        <CriarQuestao/>
+        <RespQuestao/>
+        <Paginacao/>
         </>
     )
 }
