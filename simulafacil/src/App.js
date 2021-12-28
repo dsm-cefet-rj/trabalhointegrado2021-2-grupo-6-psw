@@ -9,7 +9,7 @@ import Cartao from "./Componentes/Cartao/Cartao";
 import "./Componentes/Sidebar/Sidebar";
 import "./index.css"
 import { VerExame } from "./Componentes/Exame/VerExame";
-
+import { RemoverExame } from "./Componentes/Exame/RemoverExame";
 
 const App = () => {
     return(
@@ -25,6 +25,7 @@ const App = () => {
         <RespQuestao/>
         <Paginacao/>
         <VerExame/>
+        <RemoverExame/>
         </>
     )
 }
