@@ -8,7 +8,7 @@ import Paginacao from "./Componentes/Paginação/Paginacao";
 import Cartao from "./Componentes/Cartao/Cartao";
 import "./Componentes/Sidebar/Sidebar";
 import "./index.css"
-
+import { VerExame } from "./Componentes/Exame/VerExame";
 
 
 const App = () => {
@@ -24,6 +24,7 @@ const App = () => {
         <CriarExame/>
         <RespQuestao/>
         <Paginacao/>
+        <VerExame/>
         </>
     )
 }
