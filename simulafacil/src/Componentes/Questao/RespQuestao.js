@@ -1,6 +1,8 @@
 import React from "react";
 import questao from "./Questoes";
 import Button from 'react-bootstrap/Button';
+import Paginacao from "../Paginação/Paginacao"
+import "../../index.css"
 import { useState } from "react";
 
 const RespQuestao = () =>{
@@ -23,15 +25,32 @@ return(<>
         <p> {questao[questaoAtual].questPerg}</p>
     </div>
     <div className="questbox">
-        {questao[questaoAtual].questResp.map((opResp) => (
-            <p onClick={() => respQuestaoClick(opResp.respCorreta)}>{opResp.respTexto}</p>
+    {questao[questaoAtual].questResp.map((opResp) => (
+            <label>
+                <input type="radio" value="female" name="gender" onClick={() => respQuestaoClick(opResp.respCorreta)}/>{opResp.respTexto}
+                <br/>
+            </label>
         ))}
     </div>
+    
+    <div className="paginac">
+    <Paginacao
+    pagTotal = {questao.length}
+    pagAtual = {questaoAtual + 1}
+    nxt = {questaoAtual}/>
+    </div>
+    
     </>
 )
 }
 
 export default RespQuestao;
+
+    /*<div className="questbox">
+        {questao[questaoAtual].questResp.map((opResp) => (
+            <p onClick={() => respQuestaoClick(opResp.respCorreta)}>{opResp.respTexto}</p>
+        ))}
+    </div>*/
 
 /* <input type="radio" value="x" name="alternativas" ></input> a)  <br/>
      <input type="radio" value="#" name="alternativas" ></input> b) Questão 2 Aqui<br/>

@@ -1,4 +1,5 @@
 import React from 'react'
+import reactDom from 'react-dom';
 import Pagination from 'react-bootstrap/Pagination'
 import { useState } from 'react';
 
@@ -14,6 +15,45 @@ for (let f = 1; f <=5; f++){
 }*/
 
 function Paginacao (props) {
+
+    const [arrPag, setArrPag] = useState(0);
+
+        var pagTotal = parseInt(props.pagTotal);
+        var pagAtual = parseInt(props.pagAtual);
+        var pagItems = [];
+        for (let f = 1; f<=pagTotal; f++){
+          pagItems.push(
+            <Pagination.Item key={f} active={f === pagAtual}>
+              {f}
+            </Pagination.Item>
+          )
+        }
+
+        
+    /*  const nextPag = () =>{
+        if (pagAtual === pagTotal){
+        } else {
+           props.pagClick(props.pagAtual +1)
+        }
+      } */
+
+    return(
+        <div className="center">
+
+        <Pagination>
+        <Pagination.Prev key={"lastpag"}/>
+        <Pagination.Ellipsis />
+        <Pagination>{pagItems}</Pagination>
+        <Pagination.Ellipsis />
+        <Pagination.Next key={"nextpag"}/>
+        </Pagination>
+        </div>
+    );
+};
+
+export default Paginacao;
+
+/* function Paginacao (props) {
 
     const [arrPag, setArrPag] = useState(0);
 
@@ -47,7 +87,7 @@ function Paginacao (props) {
         <Pagination>
         <Pagination.Prev/>
         <Pagination.Ellipsis />
-        <Pagination.Item>{1}</Pagination.Item>
+        <Pagination.Item >{1}</Pagination.Item>
         <Pagination.Item>{2}</Pagination.Item>
         <Pagination.Item>{3}</Pagination.Item>
         <Pagination.Ellipsis />
@@ -56,8 +96,7 @@ function Paginacao (props) {
         </div>
     );
 };
-
-export default Paginacao;
+*/
 
 /*<div>
             <Pagination>
