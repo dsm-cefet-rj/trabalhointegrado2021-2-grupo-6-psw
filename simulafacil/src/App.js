@@ -9,6 +9,7 @@ import Home from "./Componentes/Home/Home";
 import RespQuestao from "./Componentes/Questao/RespQuestao";
 import Paginacao from "./Componentes/Paginação/Paginacao";
 import Cartao from "./Componentes/Cartao/Cartao";
+import Perfil from "./Componentes/Perfil/Perfil";
 import "./Componentes/Sidebar/Sidebar";
 import "./index.css"
 
@@ -22,7 +23,8 @@ const App = () => {
             <Routes>
                 <Route exact path="/" element={<Home/>}></Route>
                 <Route path="/CriarExame" element={<CriarExame/>}></Route>
-                <Route path="RespQuestao" element={<RespQuestao/>}></Route>
+                <Route path="/RespQuestao" element={<RespQuestao/>}></Route>
+                <Route path="/Perfil" element={<Perfil/>}></Route>
             </Routes>
         </Router>
 

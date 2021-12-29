@@ -30,7 +30,7 @@ const Home = () =>{
                         titulo="Perfil"
                         texto="Acesse o seu perfil de usuário."
                         botao="Acessar"
-                        dir="/"/>
+                        dir="/Perfil"/>
                 </div>
             </div>
         </>
