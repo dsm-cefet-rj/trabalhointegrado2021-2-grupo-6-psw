@@ -1,0 +1,16 @@
+.coluna {
+    display: inline-block;
+    width: 25%;
+    padding: 5 10px;
+  }
+
+.card{
+    display: inline-block;
+
+    margin:30px;
+}
+
+.menu{
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
@@ -12,7 +13,9 @@ function Cartao (props){
                     <Card.Text>
                         {props.texto}
                     </Card.Text>
-                <Button variant="warning">{props.botao}</Button>
+                    <Link to={props.dir}>
+                    <Button variant="warning">{props.botao}</Button>
+                    </Link>
             </Card.Body>
         </Card>
     )
