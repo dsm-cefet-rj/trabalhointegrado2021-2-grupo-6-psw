@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/esm/Button";
+
 export function CriarExame(){
     return(
         <div>
@@ -26,6 +29,11 @@ export function CriarExame(){
                   <label> <input type="checkbox" name="Matemática"></input> Química</label> <br/>
                   <label> <input type="checkbox" name="Matemática"></input> Inglês</label> <br/>
                 </form>
+                <div>
+                <Link to='/'>
+                <Button>Retornar</Button>
+                </Link>
+            </div>
         </div>
     );
 }

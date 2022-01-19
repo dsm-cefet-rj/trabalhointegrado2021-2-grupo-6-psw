@@ -1,6 +1,8 @@
 import React from "react"
 import "./Perfil.css"
-
+import Cartao from "../Cartao/Cartao";
+import Button from "react-bootstrap/esm/Button";
+import { Link } from "react-router-dom";
 
 function Perfil (){
     
@@ -30,6 +32,11 @@ function Perfil (){
                     <li>Inglês</li>
                     <li>História</li>
                 </ul>
+            </div>
+            <div>
+                <Link to='/'>
+                <Button>Retornar</Button>
+                </Link>
             </div>
         </div>
     )

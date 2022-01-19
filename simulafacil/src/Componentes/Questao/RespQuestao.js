@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Paginacao from "../Paginação/Paginacao"
 import "../../index.css"
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const RespQuestao = () =>{
 
@@ -39,7 +40,11 @@ return(<>
     pagAtual = {questaoAtual + 1}
     nxt = {questaoAtual}/>
     </div>
-    
+    <div>
+        <Link to='/'>
+        <Button>Retornar</Button>
+         </Link>
+    </div>
     </>
 )
 }
